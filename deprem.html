@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="afetyazı.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="resimler/logo.jpg" alt="Logo" />
+            </div>
+            <div class="logo-text">
+                <a href="index.html">
+                    <span class="afet">Afet</span><br>
+                    <span class="dayanisma">Dayanışma</span>
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="afet.html">Afet <br> Anında Yapılacaklar</a></li>
+                <li><a href="gönüllü.html">Gönüllü <br> Organizasyonları</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="ıltsm.html" class="active">Gönüllü Ol</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <nav> 
+                <ul>
+                    <li><a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a></li>
+                    <li><a href="deprem.html">Deprem</a></li>
+                    <li><a href="sel.html">Sel</a></li>
+                    <li><a href="yangın.html">Yangın</a></li>
+                    <li><a href="fırtına.html">Fırtına</a></li>
+                    <li><a href="çığ.html">Çığ</a></li>
+                </ul>
+            </nav> 
+        </div>
+        
+        <span class="open" onclick="openNav()"> &#9776;</span>
+        
+        <main id="main">
+            <div class="white-box">
+                <h1>Deprem Anında Yapılması Gerekenler</h1>
+                <img src="resimler/deprem.jpg" alt="Afet Hazırlığı" width="500" style="margin-left: 80px; margin-top: 20px;">
+    <p>Deprem anında hayatta kalma şansınızı artırmak için doğru adımları bilmek çok önemlidir. İşte deprem sırasında yapmanız gereken temel adımlar:</p>
+        
+    <h2>1. Sakin Kalın</h2>
+    <p>Panik yapmak, tehlike riskini artırabilir. Sakin kalmaya çalışarak etrafınızdaki durumu değerlendirin ve hızlı bir şekilde hareket edin.</p>
+        
+    <h2>2. Güvenli Bir Yer Bulun</h2>
+    <p>Deprem sırasında sağlam bir masa veya mobilyanın altına girerek başınızı ve boynunuzu koruyun. Cam kırılmaları nedeniyle yaralanmamak için pencerelerden uzak durun ve yapısal olarak dayanıklı bir duvarın yakınına geçin.</p>
+           
+        
+        
+    <h2>3. Elektrik ve Gaz Hatlarından Uzak Durun</h2>
+    <p>Yangın veya patlama riskini azaltmak için elektrik hatlarından ve gaz kokusu alıyorsanız gaz vanasını kapatmayı unutmayın.</p>
+        
+    <h2>4. Asansör Kullanmayın</h2>
+    <p>Deprem sırasında asansörler çalışmayabilir veya sıkışabilir. Merdivenler de güvenli olmayabilir, bu nedenle bulunduğunuz yerde korunmaya çalışın.</p>
+        
+    <h2>5. Dışarıdaysanız Açık Alanda Durun</h2>
+    <p>Binalardan uzak durun çünkü çöken bina parçaları tehlikeli olabilir. Ayrıca, elektrik direkleri ve ağaçlar devrilebilir, bu yüzden bunlardan da kaçının.</p>        
+    <h2>6. Afet Çantanızı Hazırlayın</h2>
+    <p>Deprem sonrası hayatta kalmak için önceden hazırladığınız acil durum çantasını hemen yanınıza alın. Çantanızda su, yiyecek, ilaçlar, el feneri ve pil gibi malzemeler bulunmalıdır.</p>
+        
+    <h2>7. Yetkililerin Talimatlarını İzleyin</h2>
+    <p>Yerel afet yönetim ekiplerinin yönlendirmelerini takip ederek güvenli bölgelere ulaşmaya çalışın.</p>
+            </div>
+        </main>
+        
+        <script type="text/javascript">
+            function openNav() {
+                document.getElementById("sidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+        
+            function closeNav() {
+                document.getElementById("sidebar").style.width = "0px";
+                document.getElementById("main").style.marginLeft = "0px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+        </script>
+        
+        </body>
+        </html>
+        
+
+    

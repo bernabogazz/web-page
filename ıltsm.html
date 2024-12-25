@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="iltsm.css">
+    <title>Gönüllü Başvuru</title>
+    <style>
+        #successMessage {
+            display: none;
+            color: #196187; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="resimler/logo.jpg" />
+            </div>
+            <div class="logo-text">
+                <a href="index.html">
+                    <span class="afet">Afet</span><br>
+                    <span class="dayanisma">Dayanışma</span>
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="afet.html">Afet <br> Anında Yapılacaklar</a></li>
+                <li><a href="gönüllü.html">Gönüllü <br> Organizasyonları</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="ıltsm.html" class="active">Gönüllü Ol</a></li>
+            </ul>
+        </div>
+
+        <div class="volunteer-form-container">
+            <div class="volunteer-form">
+                <h2>Gönüllü Başvuru Formu</h2>
+                <form id="volunteerForm" action="/submit" method="post">
+                    <label for="first-name">İsim:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Adınızı girin" required>
+        
+                    <label for="last-name">Soyisim:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Soyadınızı girin" required>
+        
+                    <label for="email">E-posta:</label>
+                    <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
+        
+                    <label for="phone">Telefon Numarası:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Telefon numaranızı girin" required>
+        
+                    <label for="message">Mesaj:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Kendinizi tanıtın ve gönüllü olmak istediğiniz alanı belirtin" required></textarea>
+        
+                    <button type="submit">Başvur</button>
+                    <div id="successMessage">
+                        Tebrikler, Başvurunuz başarıyla alınmıştır!
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script>
+         
+            document.getElementById("volunteerForm").addEventListener("submit", function(event) {
+            
+                event.preventDefault();
+                
+                document.getElementById("successMessage").style.display = "block";
+           
+                document.querySelector("button[type='submit']").style.display = "none";
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB PAGE</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="afet.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="resimler/logo.jpg" alt="Logo" />
+            </div>
+            <div class="logo-text">
+                <a href="index.html">
+                    <span class="afet">Afet</span><br>
+                    <span class="dayanisma">Dayanışma</span>
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="afet.html">Afet <br> Anında Yapılacaklar</a></li>
+                <li><a href="gönüllü.html">Gönüllü <br> Organizasyonları</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="ıltsm.html" class="active">Gönüllü Ol</a></li>
+            </ul>
+        </div>
+
+
+        <div class="sidebar" id="sidebar">
+            <nav> 
+                <ul>
+                    <li><a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a></li>
+                    <li><a href="deprem.html">Deprem</a></li>
+                    <li><a href="sel.html">Sel</a></li>
+                    <li><a href="yangın.html">Yangın</a></li>
+                    <li><a href="fırtına.html">Fırtına</a></li>
+                    <li><a href="çığ.html">Çığ</a></li>
+                </ul>
+            </nav> 
+        </div>
+        
+        <span class="open" onclick="openNav()"> &#9776;</span>
+
+        <main id ="main">
+            <div class="white-box">
+                <h1>Afet Anında Bilinçli Olmak Neden Önemli?</h1>
+
+    <p>Afetler, hayatımızda her an karşımıza çıkabilecek ve büyük yıkımlara yol açabilecek olaylardır. Depremler, seller, yangınlar ve diğer doğal felaketler, aniden gerçekleşebilir ve hazırlıksız yakalanmamıza neden olabilir. Bu tür durumlarla karşılaşıldığında, bilinçli olmak, hayatta kalma şansını artıran en önemli faktörlerden biridir. Peki, afet anında nasıl bilinçli olmalıyız?</p>
+
+    <h2>1. Hızlı ve Soğukkanlı Olmak</h2>
+    <p>Afet anında en önemli şeylerden biri, paniğe kapılmamaktır. Panik, düşünme yetisini kısıtlar ve yanlış kararlar almanıza neden olabilir. Bilinçli bir şekilde hareket edebilmek için, olaylar başladığında ilk yapmanız gereken şey, derin bir nefes almak ve sakin kalmaktır. Bu, size durumu doğru değerlendirme ve doğru adımlar atma fırsatı sunar.</p>
+
+    <h2>2. Afet Öncesinde Hazırlık Yapmak</h2>
+    <p>Afet anında ne yapacağınızı bilmek için, önceden hazırlık yapmanız hayati önem taşır. Acil durum çantası hazırlamak, güvenli alanları belirlemek ve aile üyelerinizle afet planı yapmak, afet anında size ve sevdiklerinize zaman kazandıracaktır. Hazırlıklı olmak, ani bir durumda ne yapmanız gerektiğini bilmenizi sağlar.</p>
+
+    <h2>3. Duruma Göre Hareket Etmek</h2>
+    <p>Afet türüne göre hareket etme şekli değişir. Örneğin, bir deprem sırasında doğru şekilde sığınmak ve güvenli alanlara gitmek gerekirken, bir sel sırasında yükselen su seviyelerinden uzak durmak en doğru davranış olacaktır. Her tür afetin kendine has kuralları ve önlemleri vardır, bu yüzden afet türünü tanımak ve uygun şekilde hazırlıklı olmak çok önemlidir.</p>
+
+    <h2>4. Yardımcı Olmak</h2>
+    <p>Bilinçli olmak sadece kendi güvenliğinizi sağlamakla ilgili değil, aynı zamanda çevrenizdekilere de yardımcı olabilmeyi içerir. Afet sonrası, insanlara yardım edebilmek için doğru bilgileri edinmek ve nasıl yardımcı olabileceğinizi bilmek büyük önem taşır. Yardımcı olmak, toplumun daha güçlü ve dayanıklı olmasına katkı sağlar.</p>
+
+    <h2>5. Güncel Bilgileri Takip Etmek</h2>
+    <p>Afet anında devletin, yerel yönetimlerin ve güvenlik birimlerinin yapacağı açıklamalar, sizin ve ailenizin güvenliği için kritik öneme sahiptir. Bu yüzden, afet anında güncel bilgilere ulaşmak ve yetkililerin talimatlarına uymak hayat kurtarıcı olabilir.</p>
+
+    <p><strong>Sonuç olarak</strong>, afet anında bilinçli olmak, hayatta kalma şansını artırmak ve sevdiklerimize yardımcı olabilmek için kritik bir faktördür. Hazırlıklı olmak, doğru adımlar atmak ve çevremize yardımcı olmak, afetlerin yarattığı zararı en aza indirgememize yardımcı olacaktır.</p>
+
+    <p>Unutmayın, afetlerin etkisi büyük olabilir, ancak doğru bilgi ve hazırlıkla bu etkileri hafifletmek mümkün!</p>
+            </div>
+        </main>
+        <script type ="text/javascript">
+            window.onload = function() {
+                openNav(); // When the page loads, we open the side menu by calling the openNav function.
+            };
+            function openNav() {
+                document.getElementById("sidebar").style.width="250px";
+                document.getElementById("main").style.marginLeft="250px";
+                document.body.style.backgroundColor="rgba(0,0,0,0.4)";
+            }
+
+            function closeNav() {
+                document.getElementById("sidebar").style.width="0px";
+                document.getElementById("main").style.marginLeft="0px";
+                document.body.style.backgroundColor="rgba(0,0,0,0.4)";
+            }
+        </script>
+
+
+
+
+</body>
+</html>

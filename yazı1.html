@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="yazı1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="resimler/logo.jpg" alt="Logo" />
+            </div>
+            <div class="logo-text">
+                <a href="index.html">
+                    <span class="afet">Afet</span><br>
+                    <span class="dayanisma">Dayanışma</span>
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="#">Afet <br> Anında Yapılacaklar</a></li>
+                <li><a href="gönüllü.html">Gönüllü <br> Organizasyonları</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="ıltsm.html" class="active">Gönüllü Ol</a></li>
+
+            </ul>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a></li>
+                    <li><a href="yazı1.html">Afet Hazırlığı</a></li>
+                    <li><a href="yazı2.html">Gönüllü Olmak</a></li>
+                    <li><a href="yazı3.html">Acil Durum Çantası</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <span class="open" onclick="openNav()"> &#9776;</span>
+
+        <main id="main">
+        <div class="content">
+            <h1>Afet Hazırlığı: Temel Bilgiler ve İpuçları</h1>
+            <p>Afetler, hayatımızın her anında karşımıza çıkabilecek, insanların yaşamlarını ve çevreyi tehdit edebilecek doğal ya da insan kaynaklı olaylardır. Depremler, sel, yangın, heyelan gibi felaketler, hazırlıksız yakalanan kişilere büyük zorluklar yaşatabilir. Bu yüzden afet hazırlığı, hayati önem taşır. Bu yazıda, afetlere karşı nasıl hazırlıklı olabileceğinize dair temel bilgiler ve ipuçları sunacağız.</p>
+            
+            <ol>
+                <li><strong>Afet Planı Hazırlayın</strong>
+                    <p>Afet planı, hem evdeki tüm bireyler hem de iş yerindeki çalışanlar için belirli adımları içeren bir yol haritasıdır. Planın içermesi gereken başlıca unsurlar, toplanma noktaları, iletişim bilgileri ve evdeki ekipmanları kapsar. Afet sırasında güvenli bir alan belirlemek, telefon hatlarının kesilmesi durumunda acil iletişim numaraları oluşturmak ve acil durum çantası hazırlamak planın temel unsurlarıdır.</p>
+                </li> 
+
+                <li><strong>Acil Durum Çantası Hazırlayın</strong>
+                    <p>Afet anında hayatta kalabilmek için yanınızda taşımanız gereken temel malzemelere sahip bir acil durum çantası hazırlamak çok önemlidir. Çantanızda en az üç gün yetecek kadar su, yiyecek, ilk yardım kiti, yedek giysi, aydınlatma malzemeleri ve taşınabilir enerji kaynağı gibi temel eşyalar bulunmalıdır. Ayrıca kimlikler, sigorta belgeleri ve harita gibi önemli belgeler de çantanızda yer almalıdır.</p>
+                </li> 
+
+                <li><strong>Evdeki Güvenliği Sağlayın</strong>
+                    <p>Afet sırasında evdeki eşyaların güvenliği de büyük önem taşır. Mobilyaların ve ağır eşyaların duvara sabitlenmesi, gaz ve elektrik tesisatlarının güvenli hale getirilmesi, kapı ve pencere güvenliğinin sağlanması gibi önlemler evdeki güvenliği artırır. Deprem gibi afetlerde evdeki eşyaların sabitlenmesi, can kaybını önlemeye yardımcı olabilir.</p>
+                </li>
+
+                <li><strong>Bölgenizdeki Afet Risklerini Öğrenin</strong>
+                    <p>Yaşadığınız bölgedeki olası afet risklerini öğrenmek, hazırlığınızı yönlendirebilir. Deprem, sel ve yangın gibi risklerin farkında olmak, gerekli önlemleri almak için önemlidir. Yaşadığınız bölgenin risklerine göre afet planınızı ve güvenlik önlemlerinizi belirlemek hazırlığınızı güçlendirecektir.</p>
+                </li>
+
+                <li><strong>Afet Anında Sakin Kalın</strong>
+                    <p>Afet anında panik yapmak, felaketin etkilerini artırabilir. Sakin kalmak ve soğukkanlılıkla hareket etmek hayati önem taşır. Aile üyeleriyle iletişim kurarak, güvenli bir yere sığınarak ve yerel afet ekiplerinin talimatlarını izleyerek afetin etkilerini minimize edebilirsiniz.</p>
+                </li>
+
+                <li><strong>Eğitim ve Tatbikatlar Yapın</strong>
+                    <p>Afet anında nasıl davranacağınızı bilmek çok önemlidir. Ailenizle birlikte düzenli olarak tatbikatlar yaparak, her bireyin afet sırasında nasıl hareket etmesi gerektiğini öğretin. İlk yardım ve yangın güvenliği eğitimi almak, olası bir felakette hayat kurtarıcı olabilir.</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function openNav() {
+            document.getElementById("sidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0px";
+            document.getElementById("main").style.marginLeft = "0px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+    </script>
+</body>
+</html>

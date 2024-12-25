@@ -1,0 +1,15 @@
+{
+    "name": "web-page",
+    "version": "1.0.0",
+    "description": "",
+    "main": "js/app.js",
+    "scripts": {
+        "start": "node js/app.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "jdom": "^3.2.5",
+        "jsdom": "^25.0.1"
+    }
+}
